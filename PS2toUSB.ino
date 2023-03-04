@@ -56,14 +56,13 @@ Modified:
 Cytron_PS2Shield ps2(8, 9); // SoftwareSerial: Rx and Tx pin
 // Cytron_PS2Shield ps2; // HardwareSerial
 
-#define LEDPIN 13
 Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID, JOYSTICK_TYPE_GAMEPAD,
                    12, 1,                // Button Count, Hat Switch Count
                    true, true, true,     // X, Y, Z
                    false, false, true,   // Rx, Ry, Rz
                    false, false,         // Rudder, Throttle
                    false, false, false); // Accelerator, Brake, Steering
-int16_t minimum = 0, maximum = 255;
+const int16_t minimum = 0, maximum = 255;
 void setup()
 {
   Joystick.setXAxisRange(minimum, maximum);
@@ -75,9 +74,6 @@ void setup()
 
   ps2.begin(9600); // This baudrate must same with the jumper setting at PS2 shield
   Serial.begin(9600);
-
-  pinMode(LEDPIN, OUTPUT);
-  digitalWrite(LEDPIN, LOW);
 }
 void loop()
 {
