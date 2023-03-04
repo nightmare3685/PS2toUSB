@@ -79,7 +79,6 @@ void setup()
   pinMode(LEDPIN, OUTPUT);
   digitalWrite(LEDPIN, LOW);
 }
-uint8_t hoge = 0;
 void loop()
 {
   // 0 = pressed, 1 = released
