@@ -121,5 +121,4 @@ void loop()
   Joystick.setZAxis(ps2.readButton(PS2_JOYSTICK_RIGHT_X_AXIS));
 
   // Serial.println(ps2.readButton(PS2_JOYSTICK_RIGHT_X_AXIS));
-  // ブランチテスト
 }
