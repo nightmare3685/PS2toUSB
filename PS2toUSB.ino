@@ -69,8 +69,6 @@ void setup()
   Joystick.setXAxisRange(minimum, maximum);
   Joystick.setYAxisRange(minimum, maximum);
   Joystick.setZAxisRange(minimum, maximum);
-  // Joystick.setRxAxisRange(minimum, maximum);
-  // Joystick.setRyAxisRange(minimum, maximum);
   Joystick.setRzAxisRange(minimum, maximum);
 
   Joystick.begin();
